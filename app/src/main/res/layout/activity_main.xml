@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/silakan_isi_inputan_data_di_bawah_ini"
+        android:textAlignment="center"
+        android:textSize="23sp"
+        android:layout_marginTop="120dp"
+        android:padding="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:fontFamily="monospace"/>
+
+    <LinearLayout
+        android:id="@+id/lines_isian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/textline"
+        android:layout_margin="20dp">
+        <EditText
+            android:id="@+id/edt_nama_lengkap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="@string/nama_lengkap"
+            android:textAlignment="center"
+            android:textColorHint="@color/black"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:background="@drawable/rounder_edt" />
+        <EditText
+            android:id="@+id/edt_usia_anda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="@string/usia"
+            android:textAlignment="center"
+            android:layout_margin="5dp"
+            android:textColorHint="@color/black"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:background="@drawable/rounder_edt"/>
+        <EditText
+            android:id="@+id/edt_pendidikan_anda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="@string/pendidikan"
+            android:textAlignment="center"
+            android:layout_margin="5dp"
+            android:textColorHint="@color/black"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:background="@drawable/rounder_edt"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/cetakbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cetak"
+        android:backgroundTint="@color/teal_200"
+        android:layout_below="@id/lines_isian"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"/>
+
+</RelativeLayout>

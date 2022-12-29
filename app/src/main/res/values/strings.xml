@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ExcelExample</string>
+    <string name="silakan_isi_inputan_data_di_bawah_ini">Silakan Isi Inputan Data Di Bawah Ini</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="usia">Usia</string>
+    <string name="pendidikan">Pendidikan</string>
+</resources>
